@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+   
+
+    <style>
+      body {
+        background-color: rgb(220, 250, 250);
+        margin: opx;
+        padding: 0px;
+        /* z-index: -1; */
+      }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+      }
+      #bod {
+        display: flex;
+        justify-content: center;
+      }
+      #mainbox {
+        margin-top: 20px;
+        background-color: rgb(107, 48, 48);
+        width: 300px;
+        border: 4px solid rgb(66, 94, 25);
+        padding: 20px;
+        border-radius: 20px;
+        /* background-position: center center; */
+      }
+      .btn {
+        background-color: rgb(68, 156, 90);
+        border-radius: 20px;
+      }
+      .btn:hover {
+        background-color: rgb(66, 94, 25);
+        cursor: pointer;
+        border: 4px solid black;
+      }
+      .navbar {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+        font-size: large;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar ul :hover {
+        transform: scale(1.2);
+        transition-duration: 0.5s;
+      }
+      .n {
+        margin: 5px;
+        border-radius: 20px;
+        padding: 5px;
+        border: 4px solid green;
+      }
+      form input:hover {
+        transform: scale(1.02);
+        transition-duration: 0.5s;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+      }
+      form label {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">my blog</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="bod" data-aos="zoom-in-down">
+      <div id="mainbox">
+        <form action="backend.php" id="myform">
+          <h3>Basic Form</h3>
+          <div>
+            <label for="nam">Name:</label>
+            <input type="text" name="name" id="nam" class="n" />
+          </div>
+          <div>
+            <label for="class">Class:</label>
+            <input type="text" name="class" id="class" class="n" />
+          </div>
+          <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" class="n" />
+          </div>
+
+          <label for="car">Car</label>
+          <select name="mycar" id="car" class="n">
+            <option value="ind">indica</option>
+            <option value="nano" selected>nano</option>
+            <option value="wagonr">wagon r</option>
+          </select>
+          <div><input type="button" value="Submit Now" class="btn n" /></div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
